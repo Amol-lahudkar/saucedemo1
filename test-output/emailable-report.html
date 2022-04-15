@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">chromeTest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,586</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefoxTest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,660</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">12</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">82,246</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.TestClasses.Tc01loginfuctionality</td><td><a href="#m0">logiFunctionality</a></td><td rowspan="1">1650005721198</td><td rowspan="1">8376</td></tr><tr><th colspan="4">chromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.orangehrm.TestClasses.Tc01loginfuctionality</td><td><a href="#m1">forgotpassClickabl</a></td><td rowspan="1">1650005720165</td><td rowspan="1">1031</td></tr><tr class="passedeven"><td><a href="#m2">visibleForgotTab</a></td><td rowspan="1">1650005720091</td><td rowspan="1">32</td></tr><tr class="passedeven"><td><a href="#m3">visibleLoginTab</a></td><td rowspan="1">1650005720058</td><td rowspan="1">32</td></tr><tr class="passedeven"><td><a href="#m4">visibleOrangHRMTab</a></td><td rowspan="1">1650005720125</td><td rowspan="1">37</td></tr><tr class="passedeven"><td><a href="#m5">visibleUsertab</a></td><td rowspan="1">1650005719875</td><td rowspan="1">140</td></tr><tr class="passedeven"><td><a href="#m6">visiblepasswordtab</a></td><td rowspan="1">1650005720020</td><td rowspan="1">37</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefoxTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.TestClasses.Tc01loginfuctionality</td><td><a href="#m7">logiFunctionality</a></td><td rowspan="1">1650005763141</td><td rowspan="1">10163</td></tr><tr><th colspan="4">firefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.orangehrm.TestClasses.Tc01loginfuctionality</td><td><a href="#m8">forgotpassClickabl</a></td><td rowspan="1">1650005761948</td><td rowspan="1">1188</td></tr><tr class="passedeven"><td><a href="#m9">visibleForgotTab</a></td><td rowspan="1">1650005761871</td><td rowspan="1">38</td></tr><tr class="passedeven"><td><a href="#m10">visibleLoginTab</a></td><td rowspan="1">1650005761840</td><td rowspan="1">30</td></tr><tr class="passedeven"><td><a href="#m11">visibleOrangHRMTab</a></td><td rowspan="1">1650005761910</td><td rowspan="1">36</td></tr><tr class="passedeven"><td><a href="#m12">visibleUsertab</a></td><td rowspan="1">1650005761766</td><td rowspan="1">37</td></tr><tr class="passedeven"><td><a href="#m13">visiblepasswordtab</a></td><td rowspan="1">1650005761804</td><td rowspan="1">34</td></tr></tbody>
+</table>
+<h2>chromeTest</h2><h3 id="m0">com.orangehrm.TestClasses.Tc01loginfuctionality#logiFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\91848\eclipse-workspace\OrangeHRM\ScreenShot\orangeHRMFri Apr 15 12-25-29 IST 2022.jpg (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:136)
+	at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:115)
+	at com.orangehrm.Utilityclass.ScreenShotUtility.ScreenShot(ScreenShotUtility.java:19)
+	at com.orangehrm.TestClasses.Tc01loginfuctionality.logiFunctionality(Tc01loginfuctionality.java:79)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.orangehrm.TestClasses.Tc01loginfuctionality#forgotpassClickabl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleForgotTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleLoginTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleOrangHRMTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleUsertab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.orangehrm.TestClasses.Tc01loginfuctionality#visiblepasswordtab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefoxTest</h2><h3 id="m7">com.orangehrm.TestClasses.Tc01loginfuctionality#logiFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\91848\eclipse-workspace\OrangeHRM\ScreenShot\orangeHRMFri Apr 15 12-26-13 IST 2022.jpg (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:136)
+	at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:115)
+	at com.orangehrm.Utilityclass.ScreenShotUtility.ScreenShot(ScreenShotUtility.java:19)
+	at com.orangehrm.TestClasses.Tc01loginfuctionality.logiFunctionality(Tc01loginfuctionality.java:79)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.orangehrm.TestClasses.Tc01loginfuctionality#forgotpassClickabl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleForgotTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleLoginTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleOrangHRMTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.orangehrm.TestClasses.Tc01loginfuctionality#visibleUsertab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.orangehrm.TestClasses.Tc01loginfuctionality#visiblepasswordtab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
